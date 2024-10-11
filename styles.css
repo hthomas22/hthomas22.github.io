@@ -1,30 +1,34 @@
-/* Base styles */
+/* Base styles for body and text elements */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Dark text */
+    background-color: #e0e0e0; /* Light grey background */
+    color: #333; /* Dark grey text */
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Headings */
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+/* Paragraphs and list items */
 p, li {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 
+/* Header section */
 header {
-    background-color: #0077cc; /* Light blue header */
+    background-color: #003366; /* Dark blue header */
     color: white; /* White text */
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     transition: background-color 0.3s;
     text-align: center;
 }
 
+/* Container for content alignment */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -32,6 +36,7 @@ header {
     padding: 0 20px;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -43,31 +48,33 @@ nav ul li {
     margin-right: 30px;
 }
 
+/* Navigation links */
 nav a {
-    color: white; /* Light mode link color */
+    color: white; /* Light blue link color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
+/* Hero section */
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: -moz-radial-gradient(center, #bf4440 0%, #45515B 23%, #505fe9 100%);
-background: -webkit-radial-gradient(center, #bf4440 0%, #45515B 23%, #505fe9 100%);
-background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #505fe9 100%);
-    color: white;
+    background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #003366 100%);
+    color: white; /* White text */
 }
 
+/* Profile image */
 .profile-image {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
+/* Call-to-action button */
 .cta-button {
-    background: #ff9800;
-    color: white;
+    background: #bf4440; /* Red button */
+    color: white; /* White text */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -76,28 +83,28 @@ background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #505fe9 
 }
 
 .cta-button:hover {
-    background: #e68900;
+    background: #993333; /* Darker red on hover */
 }
 
+/* General section styling */
 .section {
-    padding:25px;
-    color: white;  
-    background: #bf4440;
-    background: -moz-radial-gradient(center, #bf4440 0%, #45515B 23%, #505fe9 100%);
-    background: -webkit-radial-gradient(center, #bf4440 0%, #45515B 23%, #505fe9 100%);
-    background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #505fe9 100%);
+    padding: 25px;
+    color: white;
+    background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #003366 100%);
     min-height: 150px;
     text-align: center;
 }
 
+/* Project grid container */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
+/* Individual project item */
 .project-item {
-    background: #f9f9f9;
+    background: #f0f0f0; /* Light grey */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -109,8 +116,9 @@ background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #505fe9 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Testimonial items */
 .testimonial-item {
-    background: #f9f9f9;
+    background: #f0f0f0; /* Light grey */
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
@@ -121,8 +129,9 @@ background: radial-gradient(ellipse at center, #bf4440 0%, #45515B 23%, #505fe9 
     transform: translateY(-5px);
 }
 
+/* Footer styling */
 footer {
-    background-color: #0077cc;
+    background-color: #003366; /* Dark blue */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -135,13 +144,13 @@ footer a {
 
 /* Dark mode styles */
 body.dark-mode {
-    background-color: #1a1a1a; /* Darker background */
-    color: #e0e0e0; /* Light text */
+    background-color: #1a1a1a; /* Dark grey background */
+    color: #e0e0e0; /* Light grey text */
 }
 
 header.dark-mode {
-    background-color: #222; /* Darker header background */
-    color: #f0f0f0; /* Light text in header */
+    background-color: #222; /* Dark header */
+    color: #f0f0f0; /* Light text */
 }
 
 nav ul li a.dark-mode {
@@ -149,12 +158,12 @@ nav ul li a.dark-mode {
 }
 
 button.dark-mode {
-    background-color: #333; /* Darker button background */
+    background-color: #333; /* Dark button */
     color: #f4f4f4; /* Light text */
 }
 
 .section.dark-mode {
-    background-color: #2a2a2a; /* Darker background for sections */
+    background-color: #2a2a2a; /* Darker section background */
     color: #e0e0e0; /* Light text */
 }
 
@@ -172,12 +181,13 @@ footer a.dark-mode {
     color: #cccccc; /* Slightly darker link color in footer */
 }
 
+/* Dark mode toggle button */
 #dark-mode-toggle {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Dark background for toggle */
+    color: white; /* White text */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -186,10 +196,10 @@ footer a.dark-mode {
 }
 
 #dark-mode-toggle:hover {
-    background-color: #555;
+    background-color: #555; /* Slightly lighter on hover */
 }
 
-/* Animations */
+/* Animations using AOS (Animate On Scroll) */
 [data-aos="fade-up"] {
     opacity: 0;
     transform: translateY(50px);
