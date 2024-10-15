@@ -104,7 +104,7 @@ nav a {
 
 /* Individual project item */
 .project-item {
-    background: #f0f0f0; /* Light grey */
+    background: #A8A8A8; /* Light grey */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -118,7 +118,7 @@ nav a {
 
 /* Testimonial items */
 .testimonial-item {
-    background: #f0f0f0; /* Light grey */
+    background: #A8A8A8; /* Light grey */
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
